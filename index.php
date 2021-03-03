@@ -13,9 +13,157 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>Google Faq</title>
   </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    header {
+      width: 100%;
+      height: 95px;
+      position: fixed;
+      z-index: 2;
+      background-color: white;
+      border-bottom: 1px solid #CBCBCB;
+      color: #606368;
+    }
+    header .header_top {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      align-content: center;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 8px;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+    header .header_top .header_top_left {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+    header .header_top .header_top_left img {
+      height: 26px;
+      margin-top: 5px;
+      margin-right: 21px;
+      margin-left: 10px;
+      transform: scale(1.2,1.2);
+      cursor: pointer;
+    }
+    header .header_top .header_top_left span {
+      font-size: 18px;
+    }
+    header .header_top .header_top_right {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+    header .header_top .header_top_right img {
+      cursor: pointer;
+    }
+    header .header_top .header_top_right div {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      background-color: green;
+      margin-left: 20px;
+      color: white;
+      font-size: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    header .header_bottom {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      padding-left: 20px;
+      font-size: 14px;
+      padding-top: 11px;
+    }
+    header .header_bottom .blocco_header {
+      margin-right: 45px;
+      line-height: 34px;
+      cursor: pointer;
+    }
+    header .header_bottom .blocco_header:hover .scritta {
+      color: #3368D6;
+    }
+    header .header_bottom .blocco_header:hover .lineablu {
+      visibility: visible;
+    }
+    header .header_bottom .blocco_header .lineablu {
+      width: 100%;
+      height: 3px;
+      background-color: #3368D6;
+      visibility: hidden;
+    }
+    main {
+      padding: 135px 240px;
+      color: rgba(0,0,0,0.87);
+    }
+    h2 {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    main a {
+      color: #3368D6;
+      text-decoration: none;
+    }
+    footer {
+      width: 100%;
+      height: 45px;
+      background-color: #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 240px;
+      align-items: center;
+    }
+    footer a {
+      text-decoration: none;
+      font-size: 10px;
+      color: #898a8d;
+      position: relative;
+      margin-left: 9px;
+      margin-right: 5px;
+    }
+    footer .footer_left {
+      height: 100%;
+      line-height: 45px;
+    }
+    footer .footer_left .point {
+      color: #898a8d;
+      font-size: 10px;
+      position: absolute;
+    }
+    footer .footer_right {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    footer .footer_right i {
+      color: #3368D6;
+      padding-right: 5px;
+    }
+    footer .footer_right select {
+      width: 175px;
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+  </style>
   <body>
     <header>
       <div class="header_top">
