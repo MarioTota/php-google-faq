@@ -14,13 +14,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <title>Google Faq</title>
   </head>
   <body>
     <header>
       <div class="header_top">
         <div class="header_top_left">
-          <img src="https://lh3.googleusercontent.com/proxy/TPN8_O-cPGvxWzSL_-Zz-EeuDpN3gK25MQvCtF3DgNqi_YQ5NHuB34q2En9bQZOGxXe_NDRrxvQEwtcZQ3TtzUhr0RCfLnvCDwDV7Y17nYHo9bMc7ie-Bfqe8OM26fN6mw" alt="">
+          <img src="https://www.google.it/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="">
           <span>Privacy e termini</span>
         </div>
         <div class="header_top_right">
